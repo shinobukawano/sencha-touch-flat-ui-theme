@@ -1,0 +1,21 @@
+{
+  "name": "sencha-touch-flat-ui-theme",
+  "version": "0.0.0",
+  "description": "",
+  "repository": "https://github.com/kawanoshinobu/sencha-touch-flat-ui-theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KAWANO Shinobu",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-compass": "~0.3.0",
+    "grunt-contrib-livereload": "~0.1.2",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-regarde": "~0.1.1"
+  }
+}
