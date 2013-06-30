@@ -6,6 +6,14 @@ Theme for Sencha Touch based on [Flat-UI](http://designmodo.com/demo/flat-ui/).
 
 ## Setup
 
+Install grunt-cli
+
+    npm install -g grunt-cli
+
+
+
+
+
 ## Getting Started
 
 ## Version
