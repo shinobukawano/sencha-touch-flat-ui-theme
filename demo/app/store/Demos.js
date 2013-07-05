@@ -364,7 +364,7 @@
         id: 'theme',
         items: [
             {
-                text: 'Auto Detect',
+                text: 'Flat',
                 view: 'ThemeAuto',
                 leaf: true,
                 id: 'autotheme'

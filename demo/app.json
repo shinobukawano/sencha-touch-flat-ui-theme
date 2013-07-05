@@ -11,10 +11,32 @@
     ],
     "css": [
         {
+            "path": "../../resources/css/base.css",
+            "platform": ["base"],
+            "update": "delta"
+        },
+        {
             "path": "resources/css/flat.css",
-            // "path": "resources/css/sencha-touch.css",
             "platform": ["chrome", "safari", "ios", "android", "firefox"],
             "theme": "Default",
+            "update": "delta"
+        },
+        {
+            "path": "resources/css/sencha-touch.css",
+            "platform": ["sencha"],
+            "theme": "Default",
+            "update": "delta"
+        },
+        {
+            "path": "resources/css/wp.css",
+            "platform": ["ie10"],
+            "theme": "Windows",
+            "update": "delta"
+        },
+        {
+            "path": "resources/css/bb10.css",
+            "platform": ["blackberry"],
+            "theme": "Blackberry",
             "update": "delta"
         }
     ],

@@ -37,4 +37,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask("deploy", ["compass:dev", "copy"]);
   grunt.registerTask('default', ['watch']);
+
 };
