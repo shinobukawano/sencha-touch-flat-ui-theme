@@ -33,6 +33,13 @@ module.exports = function(grunt) {
             { src: 'src/themes/fonts/lato/lato-italic.ttf', dest: 'demo/resources/fonts/lato-italic.ttf' },
             { src: 'src/themes/fonts/lato/lato-regular.ttf', dest: 'demo/resources/fonts/lato-regular.ttf' }
         ]
+      },
+      release: {
+        files: [
+            { src: 'src/themes/fonts/lato/*', dest: 'dist/' },
+            { src: 'src/themes/stylesheets/sencha-touch/_flat.scss', dest: 'dist/' },
+            { src: 'src/themes/stylesheets/sencha-touch/flat/**/*', dest: 'dist/' }
+        ]
       }
     }
   });
@@ -41,7 +48,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask("deploy", ["compass:dev", "copy"]);
+  grunt.registerTask("deploy", ["compass:dev", "copy:main"]);
   grunt.registerTask('default', ['watch']);
 
 };

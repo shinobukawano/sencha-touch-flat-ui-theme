@@ -1,0 +1,110 @@
+/**
+ * @class Global_CSS
+ *
+ * Global CSS variables and mixins of Sencha Touch.
+ */
+
+/**
+ * @var {boolean} $include-html-style
+ * Optionally remove included HTML styles/typography (for components with styleHtmlContent: true).
+ * Styles are scoped to .x-html. Set t o false to reduce CSS weight.
+ */
+$include-html-style: true !default;
+
+/**
+ * @var {boolean} $include-default-icons
+ * Optionally remove the default icon set which includes the following toolbar and tab bar icons: action,
+ * add, arrow_down, arrow_left, arrow_right, arrow_up, bookmarks, compose, delete, download, favorites,
+ * home, info, locate, maps, more, organize, refresh, reply, search, settings, star, team, time, trash,
+ * and user. Set to false to reduce CSS weight.
+ */
+$include-default-icons: true !default;
+
+/**
+ * @var {boolean} $include-form-sliders
+ * Decides if default HTML styles are included (for components with styleHtmlContent: true). Class is applied to .x-html.
+ */
+$include-form-sliders: true !default;
+
+/**
+ * @var {boolean} $include-default-uis
+ * Decides whether or not to include the default UIs for all components.
+ */
+$include-default-uis: true !default;
+
+/**
+ * @var {color} $active-color
+ * Color used for elements like selected rows, "action" UIs (eg. on buttons) and certain overlays like the picker mask.
+ */
+//$active-color: darken(saturate($base-color, 55%), 10%) !default;
+
+/**
+ * @var {color} $page-bg-color
+ * Background color for fullscreen components.
+ */
+//$page-bg-color: #eee !default;
+
+/**
+ * @var {measurement} $global-row-height
+ * The minimum row height for items like toolbars.
+ */
+$global-row-height: 2.6em !default;
+
+/**
+ * @var {measurement} $global-row-height
+ * The minimum row height for items like toolbars.
+ */
+$global-list-height: 46px !default;
+
+/**
+ * @var {color} $loading-spinner-color
+ * Background-color for the bars in the loading spinner.
+ */
+$loading-spinner-color: #aaa !default;
+
+$foreground-color: #34495e;
+
+$background-color: #fff;
+
+$inactive-color: #666 !default;
+
+$dialog-color: #1F1F1F;
+
+$field-background-color: #fff !default;
+$field-border-color: #eee !default;
+$field-color: #34495e !default;
+$field-placeholder-color: #7A7A7A !default;
+$field-focus-background-color: #fff !default;
+$field-focus-border-color: #1abc9c !default;
+$field-disabled-background-color: #EAEAEA !default;
+$field-disabled-border-color: #D9D9D9 !default;
+$field-disabled-color: #9F9F9F !default;
+$field-disabled-placeholder-color: #BDBDBD !default;
+
+$form-slider-background-color: #dbdbdb !default;
+$form-slider-value-background-color: #16a085 !default;
+$form-slider-thumb-background-color: #16a085 !default;
+$form-slider-disabled-background-color: #DBDBDB !default;
+$form-slider-disabled-value-background-color: #BABABA !default;
+$form-slider-disabled-thumb-background-color: #A0A0A0 !default;
+
+$form-toggle-background-color: #dbdbdb !default;
+$form-toggle-border-color: #16a085 !default;
+$form-toggle-thumb-background-color: #1abc9c !default;
+$form-toggle-disabled-background-color: #E0E0E0 !default;
+$form-toggle-disabled-border-color: #CCCCCC !default;
+$form-toggle-disabled-thumb-background-color: #A6A6A6 !default;
+
+
+$form-slider-height: 11px !default;
+
+$alert-color: red !default;
+$confirm-color: #92cf00 !default; // Green
+
+$font-size-extra-large: 1.5em;
+$font-size-medium: 1em;
+$font-size-medium-large: 1.1em;
+$font-size-large: 1.3em !default;
+$font-size-normal: 1em;
+$font-size-small: .8em;
+

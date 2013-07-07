@@ -1,0 +1,158 @@
+/**
+ * @class Ext.Panel
+ */
+
+.x-form.x-floating,
+.x-panel.x-floating,
+.x-msgbox {
+    background-color: #fff;
+
+    .x-title {
+        color: #34495e;
+    }
+
+    .x-slider.x-item-disabled {
+        &:before {
+            background-color: $form-slider-disabled-background-color;
+        }
+
+        .x-thumb {
+            background-color: $form-slider-disabled-thumb-background-color;
+
+            &:before {
+                background-color: $form-slider-disabled-value-background-color;
+            }
+        }
+    }
+
+    .x-thumb {
+        background-color: $form-slider-thumb-background-color;
+    }
+
+    .x-slider:before {
+        background-color: $form-slider-background-color;
+    }
+
+    // togglefield
+    .x-toggle {
+        border-color: $form-toggle-border-color;
+
+        .x-thumb {
+            &:after {
+                background: $form-slider-thumb-background-color;
+            }
+        }
+    }
+
+    .x-toggle-inner {
+        background-color: $form-toggle-background-color;
+    }
+
+    .x-item-disabled .x-toggle {
+        border-color: $form-toggle-disabled-border-color;
+
+        .x-thumb {
+            &:after {
+                background: $form-slider-disabled-thumb-background-color;
+            }
+        }
+
+        .x-toggle-inner {
+            background-color: $form-toggle-disabled-background-color;
+        }
+    }
+
+    .x-toolbar {
+        background: transparent;
+    }
+}
+
+.x-sheet,
+.x-sheet-action,
+.x-msgbox,
+.x-panel.x-floating,
+.x-form.x-floating {
+    .x-button,
+    .x-input-el {
+        border-color: #bdc3c7 !important;
+
+        &.x-item-disabled {
+            border-color: #bbb !important;
+
+            .x-button-label {
+                color: #bbb !important;
+            }
+        }
+    }
+
+    .x-clear-icon {
+        border-color: white !important;
+    }
+
+    .x-button-pressing {
+        background-color: #000 !important;
+
+        .x-button-label {
+            color: #fff !important;
+        }
+    }
+
+    .x-list-item {
+        color: #000;
+    }
+}
+
+.x-panel-accent,
+.x-nested-list-accent,
+.x-list-accent,
+.x-container-accent {
+    background-color: $base-color;
+
+    // Title
+    .x-title {
+        color: #fff;
+    }
+
+    // Back buttons
+    .x-button-back,
+    .x-button-forward {
+        border-color: #fff !important;
+
+        &:before {
+            color: #fff;
+        }
+
+        &.x-button-pressing {
+            background: #fff !important;
+
+            &:before {
+                color: $base-color;
+            }
+        }
+    }
+
+    // Lists
+    .x-list-item-body {
+        color: #fff;
+    }
+
+    .x-item-pressed {
+        .x-dock-horizontal .x-dock-body {
+            background-color: rgba(255,255,255,.1) !important;
+
+            .x-list-item-body {
+                color: #fff !important;
+            }
+        }
+    }
+
+    .x-item-selected {
+        .x-dock-horizontal .x-dock-body {
+            background-color: #fff !important;
+
+            .x-list-item-body {
+                color: $base-color !important;
+            }
+        }
+    }
+}
