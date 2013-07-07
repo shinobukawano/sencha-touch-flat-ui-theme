@@ -10,10 +10,12 @@
 
 .x-carousel-indicator-light span,
 .x-carousel-indicator-dark span {
-	background-color: $inactive-color;
+	background-color: #bdc3c7;
+    // background-color: $inactive-color;
 
 	&.x-carousel-indicator-active {
-		background-color: $base-color;
+        background-color: #1abc9c;
+		// background-color: $base-color;
 	}
 }
 

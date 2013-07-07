@@ -16,6 +16,7 @@ $disabled-color: #999;
     .x-button-icon {
         width: 20px;
         height: 24px;
+        color: white;
 
         &:before {
             font-size: 24px;
@@ -85,7 +86,6 @@ $disabled-color: #999;
     .x-button-label {
         padding-left: 6px;
         padding-right: 6px;
-        line-height: 1.6em;
     }
 
     .x-webkit & .x-button-icon:before {
@@ -145,7 +145,7 @@ $disabled-color: #999;
 
 .x-badge {
     border: 0;
-    background-color: $base-color;
+    background-color: #e74c3c;
     color: #fff;
     font-size: 9pt;
     min-width: 30px;
@@ -153,6 +153,7 @@ $disabled-color: #999;
     top: -2px;
     @include ellipsis;
     padding: 0 2px;
+    @include border-radius(6px);
 }
 
 @if $include-default-icons {

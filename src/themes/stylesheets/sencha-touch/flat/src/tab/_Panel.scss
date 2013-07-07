@@ -44,8 +44,6 @@
 
 // Docked Top
 .x-tabbar.x-docked-top {
-    height: 70px;
-
     .x-tab {
         color: $inactive-color;
         padding: .4em .4em;
@@ -69,8 +67,6 @@
 
 // Docked bottom
 .x-tabbar.x-docked-bottom {
-    height: 90px;
-
     .x-button-icon:before {
         font-size: 29px;
         line-height: 35px;
@@ -81,7 +77,7 @@
         @include st-box-orient(vertical);
         padding: 0;
         min-width: auto;
-        margin: 13px 20px 18px;
+        margin: 5px;
 
         .x-button-label {
             font-size: 12px;
@@ -100,7 +96,7 @@
 
 // UIs
 .x-tabbar-accent.x-docked-top {
-    background-color: $base-color;
+    background-color: $foreground-color;
 
     .x-tab {
         .x-button-label {
@@ -130,24 +126,24 @@
 }
 
 .x-tabbar-dark.x-docked-top {
-    background-color: #111;
+    background-color: $foreground-color;
 
     .x-tab {
         .x-button-label {
-            color: #666;
+            color: #fff;
         }
 
         &.x-tab-pressed,
         &.x-tab-active {
             .x-button-label {
-                color: #fff;
+                color: #1abc9c;
             }
         }
     }
 }
 
 .x-tabbar-accent.x-docked-bottom {
-    background-color: $base-color;
+    background-color: $foreground-color;
 
     .x-button-label {
         color: #fff;
@@ -177,7 +173,7 @@
 }
 
 .x-tabbar-dark.x-docked-bottom {
-    background-color: #111;
+    background-color: $foreground-color;
 
     .x-button-label {
         color: #fff;
@@ -192,10 +188,10 @@
         &.x-tab-pressed,
         &.x-tab-active {
             .x-button-icon {
-                background-color: #fff;
+                background-color: #1abc9c;
 
                 &:before {
-                    color: #000;
+                    color: #fff;
                 }
             }
         }
@@ -203,29 +199,29 @@
 }
 
 .x-tabbar-light.x-docked-bottom {
-    background-color: #eee;
+    background-color: #16a085;
 
     .x-tab {
         .x-button-label {
-            color: #000;
+            color: #fff;
         }
 
         .x-button-icon {
-            border-color: #000;
+            border-color: #fff;
 
             &:before {
-                color: #000;
+                color: #fff;
             }
         }
 
         &.x-tab-pressed,
         &.x-tab-active {
             .x-button-icon {
-                background-color: #000;
-                border-color: #000;
+                background-color: #fff;
+                border-color: #fff;
 
                 &:before {
-                    color: #fff;
+                    color: #16a085;
                 }
             }
         }

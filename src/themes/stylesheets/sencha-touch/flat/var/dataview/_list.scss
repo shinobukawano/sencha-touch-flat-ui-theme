@@ -6,10 +6,10 @@
  * @var {color} $list-bg-color
  * Background-color for list rows.
  */
-$list-bg-color: #efefef;
+$list-bg-color: #ECF0F1;
 
-$list-color: #333;
+$list-color: $foreground-color;
 
 $list-active-color: #ffffff;
 
-$list-active-bg-color: #16A085;
+$list-active-bg-color: #1abc9c;

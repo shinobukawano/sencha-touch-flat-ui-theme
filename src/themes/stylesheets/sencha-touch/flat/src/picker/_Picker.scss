@@ -6,79 +6,84 @@
 @include icon('delete');
 
 .x-picker {
-    .x-toolbar {
-        padding-top: .5em;
-    }
-
-    background-color: $background-color;
+    background-color: #fff;
 }
 
-.x-picker .x-picker-inner {
-    margin: $sheet-padding;
+// .x-picker {
+//     background-color: $background-color;
+// }
 
-    // @if $dark-theme {
-    //     background-color: $background-color;
-    // }
+// .x-picker .x-picker-inner {
+//     margin: $sheet-padding;
 
-    .x-picker-slot {
-        .x-body {
-            border-width: 0;
-        }
+//     // @if $dark-theme {
+//     //     background-color: $background-color;
+//     // }
 
-        &.x-last {
-            .x-body {
-                border-left: 0;
-                border-right: 0;
-            }
-        }
-    }
-}
+//     .x-picker-slot {
+//         .x-body {
+//             border-width: 0;
+//         }
 
-.x-picker-bar {
-    height: $picker-row-height + 10px;
-}
+//         &.x-last {
+//             .x-body {
+//                 border-left: 0;
+//                 border-right: 0;
+//             }
+//         }
+//     }
+// }
 
-.x-use-titles .x-picker-bar {
-    margin-top: 400px;
-}
+// .x-picker-bar {
+//     height: $picker-row-height + 10px;
+// }
 
-.x-picker-slot-title {
-    position:relative;
-    z-index: 2;
-    background-color: $dialog-color;
+// .x-use-titles .x-picker-bar {
+//     margin-top: 400px;
+// }
 
-    > div {
-        font-weight: 700;
-        padding: 0 5px;
-        font-size: $font-size-normal;
-        text-transform: uppercase;
-        color: $foreground-color;
-    }
-}
+// .x-picker-slot-title {
+//     position:relative;
+//     z-index: 2;
+//     background-color: $dialog-color;
+
+//     > div {
+//         font-weight: 700;
+//         padding: 0 5px;
+//         font-size: $font-size-normal;
+//         text-transform: uppercase;
+//         color: $foreground-color;
+//     }
+// }
 
 .x-picker-slot {
     .x-dataview-item {
-        margin: 10px 5px;
-        height: $picker-row-height;
+        // height: $picker-row-height;
+        height: 44px;
         font-weight: bold;
         padding: 0 10px;
-        color: color-by-background($background-color, 60);
-        border: 1px solid color-by-background($background-color, 30);
-        line-height: $picker-row-height;
+        color: $foreground-color;
+        // border: 1px solid color-by-background($foreground-color, 30);
+        // line-height: $picker-row-height;
+        line-height: 44px;
 
         &.x-item-selected {
-            color: color-by-background($base-color);
-            background: $base-color;
-            border-color: $base-color;
+            color: white;
+            background: #1ABC9C;
+            border-color: #1ABC9C;
         }
 
         &.x-item-pressed {
-            color: color-by-background($base-color);
+            color: white;
         }
     }
 
     .x-picker-item {
         font-size: $font-size-medium-large;
+    }
+
+    .x-dataview-inner {
+        margin: -41px 0px !important;
     }
 }
 

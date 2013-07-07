@@ -13,8 +13,9 @@
         right: 0;
         width: 32px;
         height: 32px;
-        background-color: $field-background-color;
+        background-color: #34495e; // TODO: to variable
         border: 2px solid $field-border-color;
+        @include border-radius(6px);
     }
 }
 
@@ -33,7 +34,8 @@
     font-size: 26px;
     line-height: 36px;
     content: '3';
-    color: #000;
+    color: #1abc9c; // TODO
+    @include border-radius(6px);
 }
 
 .x-item-disabled {

@@ -31,18 +31,18 @@
     }
 
     .x-list-header {
-        background-color: $background-color;
-        padding: 0.1em 1.02em 0.2em 0.65em;
-        padding-left: 5px !important;
+        background-color: #2c3e50;
+        // padding: 0.1em 1.02em 0.2em 0.65em;
+        // padding-left: 5px !important;
         font-weight: normal;
-        font-size: 17pt;
+        // font-size: 17pt;
 
         .x-innerhtml {
-          padding: .5em 0 0 .2em;
-          min-width: 44px;
-          min-height: 44px;
-          background-color: $base-color;
-          color: $foreground-color;
+          margin: .2em .5em;
+          // padding: .5em 0 0 .2em;
+          // min-width: 44px;
+          // min-height: 44px;
+          color: white;
           display: inline-block;
           width: auto;
         }
@@ -50,12 +50,13 @@
 
     // Disclosure
     .x-list-disclosure {
-        background: $base-color;
+        background-color: #95a5a6;
+        @include border-radius(15px);
         width: 29px;
         height: 29px;
         line-height: 26px;
         text-align: center;
-        margin: 7px 6px 0 0;
+        margin: 12px 6px 0 0;
 
         &:before {
             content: '>';
@@ -64,8 +65,11 @@
     }
 
     .x-item-selected .x-list-disclosure {
+        background-color: #16a085;
+
         &:before {
-            color: $base-color;
+            color: white;
         }
     }
+
 }

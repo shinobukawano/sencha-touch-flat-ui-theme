@@ -62,7 +62,7 @@ $global-list-height: 46px !default;
  */
 $loading-spinner-color: #aaa !default;
 
-$foreground-color: #333;
+$foreground-color: #34495e;
 
 $background-color: #fff;
 
@@ -71,26 +71,26 @@ $inactive-color: #666 !default;
 $dialog-color: #1F1F1F;
 
 $field-background-color: #fff !default;
-$field-border-color: #BABABA !default;
-$field-color: #000 !default;
+$field-border-color: #eee !default;
+$field-color: #34495e !default;
 $field-placeholder-color: #7A7A7A !default;
 $field-focus-background-color: #fff !default;
-$field-focus-border-color: #5C5C5C !default;
+$field-focus-border-color: #1abc9c !default;
 $field-disabled-background-color: #EAEAEA !default;
 $field-disabled-border-color: #D9D9D9 !default;
 $field-disabled-color: #9F9F9F !default;
 $field-disabled-placeholder-color: #BDBDBD !default;
 
-$form-slider-background-color: #C6C6C6 !default;
-$form-slider-value-background-color: #000 !default;
-$form-slider-thumb-background-color: #000 !default;
+$form-slider-background-color: #dbdbdb !default;
+$form-slider-value-background-color: #16a085 !default;
+$form-slider-thumb-background-color: #16a085 !default;
 $form-slider-disabled-background-color: #DBDBDB !default;
 $form-slider-disabled-value-background-color: #BABABA !default;
 $form-slider-disabled-thumb-background-color: #A0A0A0 !default;
 
-$form-toggle-background-color: #A6A6A6 !default;
-$form-toggle-border-color: #A6A6A6 !default;
-$form-toggle-thumb-background-color: $form-slider-thumb-background-color !default;
+$form-toggle-background-color: #dbdbdb !default;
+$form-toggle-border-color: #16a085 !default;
+$form-toggle-thumb-background-color: #1abc9c !default;
 $form-toggle-disabled-background-color: #E0E0E0 !default;
 $form-toggle-disabled-border-color: #CCCCCC !default;
 $form-toggle-disabled-thumb-background-color: #A6A6A6 !default;
@@ -104,7 +104,7 @@ $confirm-color: #92cf00 !default; // Green
 $font-size-extra-large: 1.5em;
 $font-size-medium: 1em;
 $font-size-medium-large: 1.1em;
-$font-size-large: 19pt !default;
+$font-size-large: 1.3em !default;
 $font-size-normal: 1em;
 $font-size-small: .8em;
 

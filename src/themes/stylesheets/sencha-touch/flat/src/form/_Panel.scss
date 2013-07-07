@@ -5,7 +5,7 @@
 // Label
 .x-form-label {
     color: $foreground-color;
-    padding: 0 10px 10px 0;
+    padding: .5em .3em;
 
     span {
         font-size: $font-size-normal;
@@ -16,19 +16,19 @@
 // Clear icon
 .x-field-input {
     .x-clear-icon {
-        top: 0;
+        top: .3em;
         right: 0;
         bottom: 0;
-        height: auto;
+        height: 28px;
         width: 32px;
+        margin-right: .2em;
 
         &:before {
             @include absolute-position;
-            color: #000;
-            font-size: 28px;
+            color: $field-focus-border-color;
+            font-size: 1.2em;
             font-weight: bold;
             text-align: center;
-            line-height: 22px;
             content: '×';
         }
 

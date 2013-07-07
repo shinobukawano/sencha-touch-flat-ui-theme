@@ -3,12 +3,17 @@
  */
 
 .x-spinner {
+
     &.x-item-disabled {
         .x-field-input:before,
         .x-spinner-button {
-            color: $field-disabled-color !important;
+            color: $foreground-color !important;
             border-color: $field-disabled-border-color !important;
             background-color: $field-disabled-background-color !important;
+
+            &:before {
+                color: #d9d9d9;
+            }
         }
     }
 
@@ -16,11 +21,13 @@
         position: relative;
         font-size: 0px;
         text-indent: -1000px;
-        background: transparent;
+        background: #34495e;
         border: 2px solid $field-border-color !important;
         width: 30px;
         height: 30px;
         margin-left: 5px;
+        margin-top: 4px;
+        @include border-radius(6px);
 
         &:before {
             @include absolute-position;
@@ -29,7 +36,7 @@
             font-size: 26px;
             line-height: 29px;
             content: '&';
-            color: $field-border-color;
+            color: #1abc9c;
         }
     }
 
@@ -38,7 +45,7 @@
     }
 
     .x-button-pressed {
-        background-color: $field-background-color;
+        background-color: righten(#34495e, 15%);
 
         &:before {
             color: $field-color;
@@ -52,12 +59,3 @@
     }
 }
 
-.x-ie {
-    .x-spinner-button:before {
-        line-height: 27px !important;
-    }
-
-    .x-spinner .x-field-input .x-input-el:disabled {
-        color: $field-color;
-    }
-}
