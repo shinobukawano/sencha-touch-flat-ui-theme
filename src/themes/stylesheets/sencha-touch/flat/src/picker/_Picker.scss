@@ -16,9 +16,9 @@
 .x-picker .x-picker-inner {
     margin: $sheet-padding;
 
-    @if $dark-theme {
-        background-color: $background-color;
-    }
+    // @if $dark-theme {
+    //     background-color: $background-color;
+    // }
 
     .x-picker-slot {
         .x-body {

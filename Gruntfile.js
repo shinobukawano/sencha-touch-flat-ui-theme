@@ -5,13 +5,15 @@ module.exports = function(grunt) {
       dev: {
         options: {
           config: 'src/sass/config.rb',
-          environment: "development"
+          environment: "development",
+          outputStyle: "nested"
         }
       },
       prod: {
         options: {
           config: 'src/sass/config.rb',
-          environment: "production"
+          environment: "production",
+          outputStyle: "compressed"
         }
       }
     },
@@ -25,7 +27,11 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: [
-            { src: 'generated/flat.css', dest: 'demo/resources/css/flat.css' }
+            { src: 'generated/flat.css', dest: 'demo/resources/css/flat.css' },
+            { src: 'src/themes/fonts/lato/lato-black.ttf', dest: 'demo/resources/fonts/lato-black.ttf' },
+            { src: 'src/themes/fonts/lato/lato-bold.ttf', dest: 'demo/resources/fonts/lato-bold.ttf' },
+            { src: 'src/themes/fonts/lato/lato-italic.ttf', dest: 'demo/resources/fonts/lato-italic.ttf' },
+            { src: 'src/themes/fonts/lato/lato-regular.ttf', dest: 'demo/resources/fonts/lato-regular.ttf' }
         ]
       }
     }

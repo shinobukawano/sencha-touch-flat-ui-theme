@@ -7,7 +7,8 @@ $disabled-color: #999;
 
 .x-button {
     @include background-clip(padding-box);
-    @include toolbar-button($background-color);
+    @include toolbar-button($button-color);
+    @include border-radius(6px);
     min-height: 1.8em;
     padding: .3em .6em .5em .6em;
 
@@ -23,7 +24,7 @@ $disabled-color: #999;
     }
 
     .x-button-label {
-        color: $foreground-color;
+        color: #ffffff;
     }
 
     &.x-item-disabled {
@@ -74,9 +75,8 @@ $disabled-color: #999;
 // Toolbar button styling
 .x-toolbar .x-button {
     margin: 0 .2em;
-    padding: .3em .5em;
-    min-width: 2.6em;
-    min-height: 2.6em;
+    // padding: .3em .5em;
+    padding: .1em .2em;
 
     .x-hasbadge .x-badge {
         line-height: 1.6em;
@@ -108,9 +108,9 @@ $disabled-color: #999;
     position: relative;
     overflow: visible;
     z-index: 1;
-    border-radius: 40px;
-    min-width: 40px !important;
-    min-height: 40px !important;
+    border-radius: 34px;
+    min-width: 2em !important;
+    min-height: 2em !important;
 
     .x-button-label {
         display: none;
@@ -121,13 +121,8 @@ $disabled-color: #999;
         content: '[';
         font-family: 'Pictos';
         text-align: center;
-        font-size: 29px;
-        line-height: 40px;
-        color: $foreground-color;
-    }
-
-    .x-ie &:before {
-        line-height: 35px;
+        line-height: 2em;
+        color: #ffffff;
     }
 
     &.x-button-pressing {
@@ -221,7 +216,7 @@ $disabled-color: #999;
 }
 
 @if $include-button-uis {
-    @include sencha-button-ui('action', $background-color);
-    @include sencha-button-ui('confirm', desaturate(darken($confirm-color, 10%), 5%));
-    @include sencha-button-ui('decline', desaturate(darken($alert-color, 10%), 5%));
+    @include sencha-button-ui('action', $action-button-color);
+    @include sencha-button-ui('confirm', $confirm-button-color);
+    @include sencha-button-ui('decline', $decline-button-color);
 }

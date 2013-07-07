@@ -12,7 +12,7 @@ $default-gradient: null;
 @mixin toolbar-button($bg-color) {
   &,
   .x-toolbar & {
-    border: 2px solid $foreground-color;
+    border: 1px solid $bg-color;
     background-color: $bg-color;
 
     &,
@@ -27,7 +27,7 @@ $default-gradient: null;
       &,
       &:after {
         color: $bg-color;
-        background-color: $foreground-color;
+        background-color: lighten($bg-color, 15%);
       }
     }
   }

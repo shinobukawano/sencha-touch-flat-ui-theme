@@ -5,23 +5,20 @@
 .x-list {
     .x-list-item {
         line-height: 42px;
-        color: color-by-background($background-color);
+        color: $list-color;
         font-size: $font-size-medium;
-
-        .x-dock-horizontal {
-            border-top: 0;
-        }
+        border-bottom: #ddd solid 1px;
 
         .x-list-item-body,
         &.x-list-item-tpl .x-innerhtml {
-            padding: 1px 5px;
+            background-color: $list-bg-color;
         }
 
         &.x-item-selected {
             .x-dock-horizontal,
             &.x-list-item-tpl .x-innerhtml {
-                background-color: $base-color;
-                color: color-by-background($base-color);
+                color: $list-active-color;
+                background-color: $list-active-bg-color;
             }
         }
     }
@@ -30,13 +27,11 @@
         &.x-list-item-tpl,
         .x-dock-horizontal {
             background-color: darken($base-color, 5%);
-            border-bottom: 1px solid darken($base-color, 5%);
         }
     }
 
     .x-list-header {
         background-color: $background-color;
-        border: 0;
         padding: 0.1em 1.02em 0.2em 0.65em;
         padding-left: 5px !important;
         font-weight: normal;
@@ -55,7 +50,6 @@
 
     // Disclosure
     .x-list-disclosure {
-        border: 0;
         background: $base-color;
         width: 29px;
         height: 29px;

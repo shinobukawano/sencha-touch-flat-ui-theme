@@ -7,3 +7,11 @@
  * Optionally disable separate button UIs, including action, confirm, and decline.
  */
 $include-button-uis: $include-default-uis !default;
+
+$button-color: #2c3e50;
+
+$action-button-color: #3498db;
+
+$confirm-button-color: #16a085;
+
+$decline-button-color: #c1392b;
