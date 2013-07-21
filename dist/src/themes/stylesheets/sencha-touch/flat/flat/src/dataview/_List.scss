@@ -1,0 +1,75 @@
+/**
+ * @class Ext.dataview.List
+ */
+
+.x-list {
+    .x-list-item {
+        line-height: 42px;
+        color: $list-color;
+        font-size: $font-size-medium;
+        border-bottom: #ddd solid 1px;
+
+        .x-list-item-body,
+        &.x-list-item-tpl .x-innerhtml {
+            background-color: $list-bg-color;
+        }
+
+        &.x-item-selected {
+            .x-dock-horizontal,
+            &.x-list-item-tpl .x-innerhtml {
+                color: $list-active-color;
+                background-color: $list-active-bg-color;
+            }
+        }
+    }
+
+    .x-list-item-odd {
+        &.x-list-item-tpl,
+        .x-dock-horizontal {
+            background-color: darken($base-color, 5%);
+        }
+    }
+
+    .x-list-header {
+        background-color: #2c3e50;
+        // padding: 0.1em 1.02em 0.2em 0.65em;
+        // padding-left: 5px !important;
+        font-weight: normal;
+        // font-size: 17pt;
+
+        .x-innerhtml {
+          margin: .2em .5em;
+          // padding: .5em 0 0 .2em;
+          // min-width: 44px;
+          // min-height: 44px;
+          color: white;
+          display: inline-block;
+          width: auto;
+        }
+    }
+
+    // Disclosure
+    .x-list-disclosure {
+        background-color: #95a5a6;
+        @include border-radius(15px);
+        width: 29px;
+        height: 29px;
+        line-height: 26px;
+        text-align: center;
+        margin: 12px 6px 0 0;
+
+        &:before {
+            content: '>';
+            color: color-by-background($base-color);
+        }
+    }
+
+    .x-item-selected .x-list-disclosure {
+        background-color: #16a085;
+
+        &:before {
+            color: white;
+        }
+    }
+
+}

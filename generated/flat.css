@@ -3021,7 +3021,7 @@ body {
       background-color: #22e1bb; }
   /* line 16, /Users/kawanoshinobu/apps/sencha-touch-flat-ui-theme/src/themes/stylesheets/sencha-touch/flat/src/_Button.scss */
   .x-button .x-button-icon {
-    width: 20px;
+    width: 24px;
     height: 24px;
     color: white; }
     /* line 21, /Users/kawanoshinobu/apps/sencha-touch-flat-ui-theme/src/themes/stylesheets/sencha-touch/flat/src/_Button.scss */
@@ -3843,7 +3843,7 @@ body {
     padding: 0.2em; }
   /* line 21, /Users/kawanoshinobu/apps/sencha-touch-flat-ui-theme/src/themes/stylesheets/sencha-touch/flat/src/_Toolbar.scss */
   .x-toolbar.x-docked-bottom {
-    background-color: white; }
+    background-color: #2c3e50; }
 
 /* line 26, /Users/kawanoshinobu/apps/sencha-touch-flat-ui-theme/src/themes/stylesheets/sencha-touch/flat/src/_Toolbar.scss */
 .x-toolbar-inner {
@@ -3857,7 +3857,8 @@ body {
   text-align: left;
   margin: 0 0.3em;
   padding: 0 5px;
-  font-weight: normal; }
+  font-weight: normal;
+  max-width: 80%; }
 
 /**
  * @class Ext.Sheet

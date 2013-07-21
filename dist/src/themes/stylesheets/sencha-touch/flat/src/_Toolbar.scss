@@ -19,7 +19,7 @@
     }
 
     &.x-docked-bottom {
-        background-color: $background-color;
+        background-color: $toolbar-background-color;
     }
 }
 
@@ -35,4 +35,5 @@
     margin: 0 0.3em;
     padding: 0 5px;
     font-weight: normal;
+    max-width: 80%;
 }

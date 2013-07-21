@@ -10,7 +10,7 @@ Theme for Sencha Touch based on [Flat-UI](http://designmodo.com/demo/flat-ui/).
 
 ## Usage
 
-- Copy `dist/src` directory's file to your project's `resource/touch` directory.
+- Copy `dist/src` directory's file to your project's `resources/touch` directory.
 
 ```sh
 cp -r ../sencha-touch-flat-ui-theme/dist/src/ touch/resources/

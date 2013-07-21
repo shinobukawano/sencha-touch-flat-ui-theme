@@ -1,0 +1,17 @@
+/**
+ * @class Ext.Button
+ */
+
+/**
+ * @var {boolean} $include-button-uis
+ * Optionally disable separate button UIs, including action, confirm, and decline.
+ */
+$include-button-uis: $include-default-uis !default;
+
+$button-color: #16a085;
+
+$action-button-color: #3498db;
+
+$confirm-button-color: #f1c40f;
+
+$decline-button-color: #c1392b;

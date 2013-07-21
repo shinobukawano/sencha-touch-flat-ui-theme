@@ -1,0 +1,100 @@
+/**
+ * @class Ext.picker.Picker
+ */
+
+@include icon('check2');
+@include icon('delete');
+
+.x-picker {
+    background-color: #fff;
+}
+
+// .x-picker {
+//     background-color: $background-color;
+// }
+
+// .x-picker .x-picker-inner {
+//     margin: $sheet-padding;
+
+//     // @if $dark-theme {
+//     //     background-color: $background-color;
+//     // }
+
+//     .x-picker-slot {
+//         .x-body {
+//             border-width: 0;
+//         }
+
+//         &.x-last {
+//             .x-body {
+//                 border-left: 0;
+//                 border-right: 0;
+//             }
+//         }
+//     }
+// }
+
+// .x-picker-bar {
+//     height: $picker-row-height + 10px;
+// }
+
+// .x-use-titles .x-picker-bar {
+//     margin-top: 400px;
+// }
+
+// .x-picker-slot-title {
+//     position:relative;
+//     z-index: 2;
+//     background-color: $dialog-color;
+
+//     > div {
+//         font-weight: 700;
+//         padding: 0 5px;
+//         font-size: $font-size-normal;
+//         text-transform: uppercase;
+//         color: $foreground-color;
+//     }
+// }
+
+.x-picker-slot {
+    .x-dataview-item {
+        // height: $picker-row-height;
+        height: 44px;
+        font-weight: bold;
+        padding: 0 10px;
+        color: $foreground-color;
+        // border: 1px solid color-by-background($foreground-color, 30);
+        // line-height: $picker-row-height;
+        line-height: 44px;
+
+        &.x-item-selected {
+            color: white;
+            background: #1ABC9C;
+            border-color: #1ABC9C;
+        }
+
+        &.x-item-pressed {
+            color: white;
+        }
+    }
+
+    .x-picker-item {
+        font-size: $font-size-medium-large;
+    }
+
+    .x-dataview-inner {
+        margin: -41px 0px !important;
+    }
+}
+
+.x-picker-right {
+    text-align: right;
+}
+
+.x-picker-center {
+    text-align: center;
+}
+
+.x-picker-left {
+    text-align: left;
+}

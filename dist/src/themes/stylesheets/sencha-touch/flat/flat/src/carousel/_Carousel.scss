@@ -1,0 +1,21 @@
+/**
+ * @class Ext.carousel.Carousel
+ */
+
+.x-carousel-indicator span {
+	width: $carousel-indicator-size;
+	height: $carousel-indicator-size;
+	margin: $carousel-indicator-spacing;
+}
+
+.x-carousel-indicator-light span,
+.x-carousel-indicator-dark span {
+	background-color: #bdc3c7;
+    // background-color: $inactive-color;
+
+	&.x-carousel-indicator-active {
+        background-color: #1abc9c;
+		// background-color: $base-color;
+	}
+}
+

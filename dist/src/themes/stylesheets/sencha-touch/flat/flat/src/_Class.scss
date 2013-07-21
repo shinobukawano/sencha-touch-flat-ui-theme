@@ -1,0 +1,40 @@
+body {
+    color: $foreground-color;
+
+    input {
+        font-family: $font-family;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: $font-family;
+    }
+
+    h4,
+    h5 {
+        font-family: $font-family;
+    }
+
+    h1 { font-size: 42pt; line-height: 50pt; }
+    h2 { font-size: 20pt; line-height: 22pt; }
+    h3 { font-size: 20pt; line-height: 22pt; }
+
+    &,
+    h4,
+    h5,
+    p {
+        // font-size: 11pt;
+        font-size: 1em;
+        // line-height: 16pt;
+    }
+
+    &,
+    p {
+        font-family: $font-family;
+    }
+}
+
+.x-layout-card-item {
+    background: $background-color;
+}
