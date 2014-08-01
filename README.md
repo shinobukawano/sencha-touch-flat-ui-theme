@@ -45,9 +45,11 @@ In order to add a new swatch or colors you can add a new stylus file under `src/
 - grunt watch
 - start modifying src/themes/stylesheets/sencha-touch/flat files
 
+**Currently, `grunt watch` task doesn't work well.. I will fix this problem at an early date. If you want to modify this theme source, please use `compass compile src/sass` and move the generate css file manually.**
+
 ## Version
 
-0.0.1
+0.0.2
 
 ## Change log
 
