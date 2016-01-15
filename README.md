@@ -2,7 +2,7 @@
 
 Theme for Sencha Touch based on [Flat-UI](http://designmodo.com/demo/flat-ui/).
 
-![Sencha-Touch-Flat-UI-Theme](http://kawanoshinobu.com/public/images/sencha-touch-flat-ui.png)
+![Sencha-Touch-Flat-UI-Theme](http://shinobukawano.com/public/images/sencha-touch-flat-ui.png)
 
 ## Demo
 
